@@ -1,5 +1,48 @@
 # ReadMe - Grid
 
-基站编号放到矩阵里了，有两个[grid2loc](https://github.com/BigDataSystemTHU2018/Project-Unicom/blob/master/Data/Grid/grid2loc.csv)和[loc2grid](https://github.com/BigDataSystemTHU2018/Project-Unicom/blob/master/Data/Grid/loc2grid.csv)文件，第一个是基站编号对应的矩阵的行列坐标，比如13号基站在矩阵的第13行第0列；第二个是矩阵行列对应的基站编号，比如第0行第1列对应#53号基站。写0的就是那个格子没有基站。
+对于每一个方格，给出了其中心点对应的格点的经纬度坐标，如
 
-Contributor: @[xinxin1000](https://github.com/orgs/BigDataSystemTHU2018/people/xinxin1000) 
+```json
+{ "attributes" : {
+        "FID" : 0,
+        "Id" : 12,
+        "wkt" : "MULTIPOLYGON (((433943.69714851433 4393540.4441694766, 434943.69714851433 4393540.4441694766, 434943.69714851433 4394540.4441694766, 433943.69714851433 4394540.4441694766, 433943.69714851433 4393540.4441694766)))",
+        "INSIDE_X" : 116.235408984,
+        "INSIDE_Y" : 39.693693209000003
+      },
+      "geometry" : {
+        "rings" : [
+          [
+            [
+              433943.69714851404,
+              4393540.4441694766
+            ],
+            [
+              433943.69714851369,
+              4394540.4441694776
+            ],
+            [
+              434943.69714851468,
+              4394540.4441694766
+            ],
+            [
+              434943.6971485152,
+              4393540.4441694766
+            ],
+            [
+              433943.69714851404,
+              4393540.4441694766
+            ]
+          ]
+        ]
+      }
+    },
+```
+
+对Json文件进行处理得到了每个格点和经纬度对应的坐标信息
+
+| 格点编号 |     经度      |     纬度     |
+| :------: | :-----------: | :----------: |
+|    12    | 116.235408984 | 39.693693209 |
+
+Contributor: @[garfieldlee96](https://github.com/orgs/BigDataSystemTHU2018/people/garfieldlee96)  @[肖飞宇](https://github.com/orgs/BigDataSystemTHU2018/people/feiyuxiaoThu) 
