@@ -45,4 +45,3 @@
 | :------: | :-----------: | :----------: |
 |    12    | 116.235408984 | 39.693693209 |
 
-Contributor: @[garfieldlee96](https://github.com/orgs/BigDataSystemTHU2018/people/garfieldlee96)  @[肖飞宇](https://github.com/orgs/BigDataSystemTHU2018/people/feiyuxiaoThu) 
